@@ -1,0 +1,79 @@
+@import 'reset';
+@import 'variables';
+
+@mixin _backgroundColor($color){
+    background-color: $color;
+}
+
+._backgroundColor{
+    @include _backgroundColor($secondary-color);
+}
+
+.bdr-tp-2{
+    border-top: 2px solid $secondary-color;
+}
+
+.bdr-btm-2{
+    border-bottom: 2px solid $secondary-color;
+}
+
+.bdr-1{
+    border: 1px solid $secondary-color;
+}
+
+.fnt-scd-clr{
+    color: $secondary-color;
+}
+
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 2px $secondary-color;
+}
+
+.navbar-brand img{
+    width: 180px;
+    height: 40px;
+}
+
+.navbar-collapse{
+    position: relative;
+    animation: _navbar-collapse;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes _navbar-collapse{
+    from{
+        left: -100%;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.navbar-nav .nav-item{
+    margin-top: 5px;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: rgb(119, 119, 119);
+    text-underline-offset: 5px;
+}
+
+
+  @media (min-width: 768px) {
+    .container-md{
+      width: 75%;
+    }
+  }
+  @media (min-width: 992px) {
+    .container-md {
+      width: 50%;
+    }
+  }
