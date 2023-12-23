@@ -13,6 +13,47 @@
   border-top: 2px solid rgb(212, 139, 112);
 }
 
+.ar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: aqua;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  border: 0;
+}
+
+.ar:hover {
+  animation: redes;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes redes {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(12deg);
+  }
+  50% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.ifood {
+  width: 60px;
+}
+
+.whatsapp {
+  width: 40px;
+}
+
+.instagram {
+  width: 38px;
+}
+
 .bdr-btm-2 {
   border-bottom: 2px solid rgb(212, 139, 112);
 }
