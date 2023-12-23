@@ -26,8 +26,12 @@
     color: $secondary-color;
 }
 
+.fnt-sz-14{
+    font-size: 14px;
+}
+
 .bg-filtro{
-    background-image: url("../image/background.svg");
+    background-image: url("../image/background.png");
     background-repeat: repeat;
     background-size: cover;
 }
