@@ -61,9 +61,17 @@
     }
 }
 
+.w-img-title{
+    width: 75%;
+}
+
+.w-img-food{
+    width: 100%;
+} 
+
 .social-network{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border: 0;
     border-radius: 45px;
     background-color: aqua;
@@ -120,6 +128,21 @@
     font-size: 14px;
 }
 
+@media(min-width: 576px){
+    .social-network{
+        width: 90px;
+        height: 90px;
+    }
+
+    .w-img-title{
+        width: 50%;
+    }
+
+    .w-img-food{
+        width: 90%;
+    }
+}
+
 @media(min-width: 768px){
     .container-md{
         width: 75%;
@@ -128,6 +151,10 @@
     .bdx-dashed-2{
         border-left: 3px dashed white;
         border-right: 3px dashed white;
+    }
+
+    .w-img-food{
+        width: 80%;
     }
 }
 
