@@ -9,8 +9,55 @@
   background-color: rgb(4, 191, 157);
 }
 
+.bg-image {
+  background-image: url("../image/background.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
 .bd-secondary-color {
   border-color: rgb(212, 139, 112) !important;
+}
+
+.navbar-brand img {
+  width: 180px;
+  height: 40px;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 2px rgb(212, 139, 112);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(212, 139, 112)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-collapse {
+  position: relative;
+  animation: _navbar-collapse;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes _navbar-collapse {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.navbar-nav .nav-item {
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-decoration-color: rgb(119, 119, 119);
+  text-underline-offset: 5px;
 }
 
 .social-network {
@@ -69,53 +116,6 @@
 
 .ft-sz-14 {
   font-size: 14px;
-}
-
-.bg-filtro {
-  background-image: url("../image/background.png");
-  background-repeat: repeat;
-  background-size: cover;
-}
-
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 2px rgb(212, 139, 112);
-}
-
-.navbar-toggler {
-  padding: 0.25rem 0.5rem;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(212, 139, 112)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-brand img {
-  width: 180px;
-  height: 40px;
-}
-
-.navbar-collapse {
-  position: relative;
-  animation: _navbar-collapse;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes _navbar-collapse {
-  from {
-    left: -100%;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
-.navbar-nav .nav-item {
-  letter-spacing: 2px;
-  text-decoration: underline;
-  text-decoration-color: rgb(119, 119, 119);
-  text-underline-offset: 5px;
 }
 
 @media (min-width: 768px) {
