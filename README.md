@@ -1,3 +1,3 @@
 ## Dressa Sweets
 
-Criação de um cardápio digital.
+Cardápio digital
